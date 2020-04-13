@@ -99,8 +99,7 @@ func ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	for i := len(Data) - 1; i >= 0; i-- {
 		if currTime >= Data[i].Time {
 			if WeDebugging { // Output some debugging info.
-				fmt.Printf("Contents of the HTTP Request: ")
-				fmt.Println(r)
+				fmt.Printf("Contents of the HTTP Request: \n%+v\n\n", *r)
 				fmt.Printf("Current time is %v, currTime is %v, and the Data[%v] time is %v\n", time.Now(), currTime, i, Data[i].Time)
 			}
 			http.Redirect(w, r, Data[i].URL, 303)
