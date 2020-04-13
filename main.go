@@ -98,8 +98,10 @@ func ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	// in the config file (because we would roll over 2359-2400/0000). 2400 is not a valid time.
 	for i := len(Data) - 1; i >= 0; i-- {
 		if currTime >= Data[i].Time {
-			if WeDebugging {
-				fmt.Printf("Current time is %v, currTime is %v, and the Data[%v] time is %v\n", time.Now(), currTime, i, Data[i].Time) // debugging.
+			if WeDebugging { // Output some debugging info.
+				fmt.Printf("Contents of the HTTP Request: ")
+				fmt.Println(r)
+				fmt.Printf("Current time is %v, currTime is %v, and the Data[%v] time is %v\n", time.Now(), currTime, i, Data[i].Time)
 			}
 			http.Redirect(w, r, Data[i].URL, 303)
 			return
