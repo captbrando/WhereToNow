@@ -13,4 +13,9 @@
 
 # Dependency directories (remove the comment below to include it)
 # vendor/
+
+# Don't store the binary
 WhereToNow
+
+# Exclude my control script
+control.sh
