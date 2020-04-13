@@ -96,7 +96,7 @@ docker-compose up -d
 
 ## Exit Codes
 
-There are a number of reasons why XXX could exit. Each one will print out an error to STDOUT as well as give an exit code. Those codes are:
+There are a number of reasons why WhereToNow could exit. Each one will print out an error to STDOUT as well as give an exit code. Those codes are:
 
 * 1: Error reading the config file. This would likely be due to passing in a file that does not exist.
 * 2: JSON file parsing error. Check your formatting.
