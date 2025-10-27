@@ -1,5 +1,7 @@
 # Where To Now
 
+![Open Issues](https://img.shields.io/github/issues/captbrando/WhereToNow) ![Open PRs](https://img.shields.io/github/issues-pr/captbrando/WhereToNow) ![Last Commit](https://img.shields.io/github/last-commit/captbrando/WhereToNow)
+
 **WhereToNow** is a small project designed to help me learn Go and Docker Containers. It's designed to vary the webpage that might show up when a user inside a corporation hits "Home" on their default browser. The idea being that "Home" might be a different target depending on the time of day. For reference, this was written during the COVID-19 pandemic. 
 
 When workers fire up their laptops at home in the morning and open their browser, content managers could first send users to an internal COVID-19 status page (or perhaps something from the CDC or WHO). When the local stock markets open, perhaps route them to websites that read out stock data. In the afternoon to promote wellness content managers would want the home page to be a "Get up and stretch" message.
